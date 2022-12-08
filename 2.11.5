@@ -1,0 +1,20 @@
+speed()
+penup()
+backward(150)
+pendown()
+radius = 10
+def square():
+    global radius
+    for i in range(4):
+        forward(radius)
+        left(90)
+        forward(radius)
+def more():
+    global radius
+    for i in range(4):
+        radius = radius + 10
+        forward(radius)
+        square()
+        forward(radius)
+square()
+more()
