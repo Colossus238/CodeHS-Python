@@ -1,0 +1,20 @@
+speed(0)
+
+shape = int(input("Which number 1 or 2? "))
+size = int(input("How big 1-30? "))
+
+def square():
+    for i in range(4):
+        left(90)
+        forward(size)
+
+def triangle():
+    circle(60, 360, 3)
+
+if shape == 2:
+    triangle()
+else:
+    square()
+while shape == 1:
+    forward(10)
+    square()
