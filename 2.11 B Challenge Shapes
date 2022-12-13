@@ -1,0 +1,21 @@
+#variables, add variables for the square and pentagon
+speed()
+tri_length = 10
+quad_length = 10
+five = 10
+#code for the triangles
+setposition(-150, 0)
+for i in range(3):
+    circle(tri_length, 360, 3)
+    tri_length = tri_length + 10
+
+#code for the squares
+setposition(-50, 0)
+for i in range(4):
+    circle(quad_length, 360, 4)
+    quad_length = quad_length + 10
+    
+setposition(50, 0)
+for i in range(5):
+    circle(five, 360, 5)
+    five = five + 10
