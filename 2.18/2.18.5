@@ -1,0 +1,21 @@
+speed()
+
+rating = int(input("What is your number (1-10)? "))
+secret_number = 7
+user_number = rating
+
+def green():
+    pensize(10)
+    color("green")
+    penup()
+    backward(25)
+    pendown()
+    right(45)
+    forward(25)
+    left(90)
+    forward(75)
+    
+while rating != secret_number:
+    rating = int(input("What is your number (1-10)? "))
+if rating == secret_number:
+    green()
