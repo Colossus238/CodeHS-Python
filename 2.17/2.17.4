@@ -1,0 +1,32 @@
+speed()
+
+rating = int(input("What do you rate?"))
+
+def red_x():
+    left(45)
+    pensize(10)
+    color("red")
+    for i in range(4):
+        left(90)
+        forward(50)
+        backward(50)
+def green():
+    pensize(10)
+    color("green")
+    penup()
+    backward(25)
+    pendown()
+    right(45)
+    forward(25)
+    left(90)
+    forward(75)
+    
+if rating <= 4:
+    red_x()
+elif rating > 7:
+    green()
+else:
+    pensize(10)
+    color("yellow")
+    forward(100)
+    backward(200)
