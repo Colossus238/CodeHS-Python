@@ -1,0 +1,34 @@
+speed()
+radius = int(input("What size?"))
+begin_fill()
+def square():
+    penup()
+    right(90)
+    forward(radius)
+    left(90)
+    forward(radius)
+    for i in range(4):
+        left(90)
+        forward(radius*2)
+color("red")
+square()
+end_fill()
+
+    
+# This function draws a blue circle in the center of the square. 
+def sircle():
+    penup()
+    backward(radius)
+    pendown()
+    circle(radius)
+# Ask the user for a radius value.
+
+# Move to bottom left corner of square based on radius value.
+# Draw red square with sides of size radius*2
+
+
+# Move to bottom center of square and draw blue circle
+color("blue")
+begin_fill()
+sircle()
+end_fill()
