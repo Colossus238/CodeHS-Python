@@ -1,0 +1,14 @@
+speed()
+right(90)
+penup()
+forward(200)
+left(90)
+def triangle_circle():
+    tri_amount = int(input("How Many Trianlges"))
+    pendown()
+    circle(200)
+    for i in range(tri_amount):
+        circle(200, 360/tri_amount)
+        circle(20, 360, 3)
+        
+triangle_circle()
