@@ -1,0 +1,14 @@
+speed()
+def square():
+    square_num = int(input("How many squares? "))
+    square_start = int(input("How big first square? "))
+    square_size = int(input("How much increase? "))
+    square_gen = 0
+    while square_gen < square_num:
+        for i in range(4):
+            forward(square_start)
+            left(90)
+        square_start = square_start + square_size
+        square_gen = square_gen + 1
+
+square()
