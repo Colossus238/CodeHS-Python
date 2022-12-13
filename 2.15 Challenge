@@ -1,0 +1,8 @@
+speed()
+
+num_sides = int(input("How many sides?"))
+radius = int(input("Radius?"))
+radius_increase = int(input("How much?"))
+
+for i in range(radius, 101, radius_increase):
+    circle(i, 360, num_sides)
