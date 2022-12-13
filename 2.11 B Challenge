@@ -1,0 +1,9 @@
+#varialbe to keep track of distance
+distance = 10
+speed()
+
+#first line of spiral, repeat the lines below to create the spiral
+for i in range(10):
+    forward(distance)
+    left(90)
+    distance = distance + 20
