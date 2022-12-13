@@ -1,0 +1,20 @@
+speed(0)
+color("red")
+pensize(5)
+def one_circle():
+    begin_fill()
+    circle(30)
+    end_fill()
+penup()
+setposition(100, 100)
+pendown()
+
+def shape():
+    for i in range(4):
+        forward(60)
+        one_circle()
+        backward(60)
+        left(90)
+shape()
+setposition(-100, -100)
+shape()
