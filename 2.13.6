@@ -1,0 +1,21 @@
+speed(4)
+def snowman():
+    color("gray")
+    radius = int(input("what size is bottom?"))
+    begin_fill()
+    penup()
+    right(90)
+    forward(150)
+    left(90)
+    pendown()
+    for i in range(3):
+        circle(radius)
+        penup()
+        right(90)
+        backward(radius*2)
+        left(90)
+        radius = radius / 2
+        pendown()
+    end_fill()
+    
+snowman()
