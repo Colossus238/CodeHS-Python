@@ -1,0 +1,19 @@
+# Program description
+print("This program is a calculator for maximum of two numbers. It has simple Multiplication, Divisison, Subtraction, and Addition.")
+
+# Variables for Calculator
+number_one = int(input("What is your first number? "))
+do = input("What would you like to do? (Multiply, divide.etc) ")
+number_two = int(input("What is your second number? "))
+
+# Calculator works
+if do == ("*"):
+    print(float(number_one) * float(number_two))
+elif do == ("+"):
+    print(float(number_one) + float(number_two))
+elif do == ("-"):
+    print(float(number_one) - float(number_two))
+elif do == ("/"):
+    print(float(number_one) / float(number_two))
+else:
+    print("Syntax Error")
